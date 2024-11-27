@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_custom_dialog"
+    android:padding="22dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_create_account_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_acconout_tex"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_part_team_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_team_message"
+            android:textColor="@color/white"
+
+            app:layout_constraintEnd_toEndOf="@+id/text_create_account_message"
+            app:layout_constraintStart_toStartOf="@id/text_create_account_message"
+            app:layout_constraintTop_toBottomOf="@id/text_create_account_message" />
+
+
+        <EditText
+            android:id="@+id/edit_register_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/new_user"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_part_team_message" />
+
+        <EditText
+            android:id="@+id/edit_register_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/email"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="@id/edit_register_username"
+            app:layout_constraintStart_toStartOf="@id/edit_register_username"
+            app:layout_constraintTop_toBottomOf="@id/edit_register_username"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_register_email_confirmation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/email_confirmation"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="@id/edit_register_email"
+            app:layout_constraintStart_toStartOf="@id/edit_register_email"
+            app:layout_constraintTop_toBottomOf="@id/edit_register_email" />
+
+        <EditText
+            android:id="@+id/edit_register_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/password"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="@id/edit_register_email_confirmation"
+            app:layout_constraintStart_toStartOf="@id/edit_register_email_confirmation"
+            app:layout_constraintTop_toBottomOf="@id/edit_register_email_confirmation" />
+
+        <Button
+            android:id="@+id/button_do_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/register"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/edit_register_password"
+            app:layout_constraintStart_toStartOf="@+id/edit_register_password"
+            app:layout_constraintTop_toBottomOf="@+id/edit_register_password" />
+
+        <TextView
+            android:id="@+id/text_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@id/button_do_account"
+            app:layout_constraintStart_toStartOf="@id/button_do_account"
+            app:layout_constraintTop_toBottomOf="@id/button_do_account" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

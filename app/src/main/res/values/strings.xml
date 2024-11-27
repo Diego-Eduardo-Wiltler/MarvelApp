@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MarvelApp</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="login">Entrar</string>
+    <string name="register">Registrar</string>
+    <string name="welcome">Bem-Vindo</string>
+    <string name="random_msg">Desenvolvimento MarvelApp</string>
+    <string name="email_confirmation">Confirme Email</string>
+    <string name="new_user">Usuário</string>
+    <string name="create_acconout_tex">Crie sua conta</string>
+    <string name="part_team_message">Faça parte do time</string>
+    <string name="view_all">Ver todos</string>
+    <string name="category_title">Titulo categoria</string>
+    <string name="card_title">Aranhaverso</string>
+    <string name="image_desc">image_desc\n</string>
+</resources>

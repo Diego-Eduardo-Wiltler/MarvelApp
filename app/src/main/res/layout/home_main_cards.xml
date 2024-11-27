@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="460dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/list_container_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#20242f" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/bg_card" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/card_title"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_view_all"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/view_all"
+                        android:textColor="#c6bfe0"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/image_category"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category"
+                        app:layout_constraintTop_toBottomOf="@id/image_category" />
+
+                    <ImageView
+                        android:id="@+id/image_category2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category2"
+                        app:layout_constraintTop_toBottomOf="@id/image_category2" />
+
+                    <ImageView
+                        android:id="@+id/image_category3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category2"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category3"
+                        app:layout_constraintTop_toBottomOf="@id/image_category3" />
+
+                    <ImageView
+                        android:id="@+id/image_category4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category3"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category4"
+                        app:layout_constraintTop_toBottomOf="@id/image_category3" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view1">
+
+                <RelativeLayout
+                    android:id="@+id/list_container_bg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#20242f" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/bg_card" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/text_title2"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/card_title"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_view_all2"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/view_all"
+                        android:textColor="#c6bfe0"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/image_category2_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all2" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category2_1"
+                        app:layout_constraintTop_toBottomOf="@id/image_category2_1" />
+
+                    <ImageView
+                        android:id="@+id/image_category2_2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category2_1"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all2" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category2_2"
+                        app:layout_constraintTop_toBottomOf="@id/image_category2_2" />
+
+                    <ImageView
+                        android:id="@+id/image_category2_3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category2_2"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all2" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category2_3"
+                        app:layout_constraintTop_toBottomOf="@id/image_category2_3" />
+
+                    <ImageView
+                        android:id="@+id/image_category2_4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category2_3"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all2" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title2_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category2_4"
+                        app:layout_constraintTop_toBottomOf="@id/image_category2_4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view2">
+
+                <RelativeLayout
+                    android:id="@+id/list_container_bg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#20242f" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/bg_card" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/text_title3"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/card_title"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_view_all3"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/view_all"
+                        android:textColor="#c6bfe0"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/image_category3_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all3" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category3_1"
+                        app:layout_constraintTop_toBottomOf="@id/image_category3_1" />
+
+                    <ImageView
+                        android:id="@+id/image_category3_2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category3_1"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all3" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category3_2"
+                        app:layout_constraintTop_toBottomOf="@id/image_category3_2" />
+
+                    <ImageView
+                        android:id="@+id/image_category3_3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category3_2"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all3" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title3_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category3_3"
+                        app:layout_constraintTop_toBottomOf="@id/image_category3_3" />
+
+                    <ImageView
+                        android:id="@+id/image_category3_4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category3_3"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all3" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title3_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category3_4"
+                        app:layout_constraintTop_toBottomOf="@id/image_category3_4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view3">
+
+                <RelativeLayout
+                    android:id="@+id/list_container_bg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#20242f" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/bg_card" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/text_title4"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/card_title"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_view_all4"
+                        style="@style/TextAppearance.MaterialComponents.Headline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/view_all"
+                        android:textColor="#c6bfe0"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/image_category4_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all4" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title4_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category4_1"
+                        app:layout_constraintTop_toBottomOf="@id/image_category4_1" />
+
+                    <ImageView
+                        android:id="@+id/image_category4_2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category4_1"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all4" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title4_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category4_2"
+                        app:layout_constraintTop_toBottomOf="@id/image_category4_2" />
+
+                    <ImageView
+                        android:id="@+id/image_category4_3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category4_2"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all4" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title4_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category4_3"
+                        app:layout_constraintTop_toBottomOf="@id/image_category4_3" />
+
+                    <ImageView
+                        android:id="@+id/image_category4_4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/bg_image_books"
+                        android:clipToOutline="true"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/marvel_bg"
+                        app:layout_constraintStart_toEndOf="@id/image_category4_3"
+                        app:layout_constraintTop_toBottomOf="@id/text_view_all4" />
+
+                    <TextView
+                        android:id="@+id/text_sub_title4_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/oxygen"
+                        android:text="@string/category_title"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/image_category4_4"
+                        app:layout_constraintTop_toBottomOf="@id/image_category4_4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>
+
