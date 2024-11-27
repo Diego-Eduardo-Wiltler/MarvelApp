@@ -236,7 +236,7 @@
                 android:contentDescription="TODO"
                 android:scaleType="fitStart"
                 android:src="@drawable/baseline_calendar_today_24"
-                android:layout_marginStart="8"
+                android:layout_marginStart="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
